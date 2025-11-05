@@ -1,0 +1,77 @@
+{
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.indentSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "emmet.showExpandedAbbreviation": "never",
+  "tailwindCSS.experimental.configFile": "packages/design-system/styles/globals.css",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "apdisk",
+    "basehub",
+    "donotpresent",
+    "ehthumbs",
+    "encryptable",
+    "esktop",
+    "eslintcache",
+    "fseventsd",
+    "Fumadocs",
+    "Geniviv",
+    "icns",
+    "jscoverage",
+    "jspm",
+    "Liveblocks",
+    "Microbundle",
+    "msix",
+    "Nuxt",
+    "pids",
+    "Qwik",
+    "sentryclirc",
+    "shadcn",
+    "stackdump",
+    "stylelintcache",
+    "tailark",
+    "timemachine",
+    "Turborepo",
+    "ultracite",
+    "vercel",
+    "vuepress",
+    "wscript"
+  ],
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}

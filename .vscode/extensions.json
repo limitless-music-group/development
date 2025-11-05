@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "biomejs.biome",
+        "bradlc.vscode-tailwindcss",
+        "Prisma.prisma",
+        "unifiedjs.vscode-mdx",
+        "mikestead.dotenv",
+        "christian-kohler.npm-intellisense",
+        "davidanson.vscode-markdownlint",
+        "wix.vscode-import-cost",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker",
+        "steoates.autoimport",
+        "formulahendry.auto-rename-tag"
+    ],
+    "unwantedRecommendations": []
+}

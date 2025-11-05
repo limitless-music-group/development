@@ -1,0 +1,77 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"ui": "tui",
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"inputs": ["$TURBO_DEFAULT$", ".env*"],
+			"outputs": ["dist/**"]
+		},
+		"lint": {
+			"dependsOn": ["^lint"]
+		},
+		"check-types": {
+			"dependsOn": ["^check-types"]
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		},
+		"dev:web": {
+			"cache": false,
+			"persistent": true
+		},
+		"dev:app": {
+			"cache": false,
+			"persistent": true
+		},	
+		"dev:api": {
+			"cache": false,
+			"persistent": true
+		},
+		"dev:docs": {
+			"cache": false,
+			"persistent": true
+		},	
+		"dev:email": {
+			"cache": false,
+			"persistent": true
+		},		
+		"dev:storybook": {
+			"cache": false,
+			"persistent": true
+		},
+		"dev:studio": {
+			"cache": false,
+			"persistent": true
+		},
+		"db:push": {
+			"cache": false,
+			"persistent": true
+		},
+		"db:migrate": {
+			"cache": false,
+			"persistent": true
+		},
+		"db:generate": {
+			"cache": false,
+			"persistent": true
+		},
+		"test": {
+			"dependsOn": ["^test"]
+		},
+		"analyze": {
+			"dependsOn": ["^analyze"]
+		},
+		"translate": {
+			"dependsOn": ["^translate"],
+			"cache": false
+		},
+		"clean": {
+			"cache": false
+		},
+		"//#clean": {
+			"cache": false
+		}
+	}
+}

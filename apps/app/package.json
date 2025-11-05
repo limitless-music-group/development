@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@packages/design-system": "workspace:*",
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*"
+  }
+}

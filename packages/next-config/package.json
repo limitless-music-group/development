@@ -1,0 +1,16 @@
+{
+    "name": "@packages/next-config",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "clean": "git clean -xdf .cache .turbo dist node_modules",
+        "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+    },
+    "devDependencies": {
+        "@packages/typescript-config": "workspace:*",
+        "next": "16.0.1"
+    },
+    "dependencies": {
+        "@next/bundle-analyzer": "16.0.1"
+    }
+}
