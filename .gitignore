@@ -1,28 +1,48 @@
-# Dependencies
-node_modules
-.pnp
-.pnp.js
+# Combined .gitignore
+# Includes: macOS, Windows, Node, Next.js, React, Storybook, Turbo, Vercel
+# Plus: Editor configs, Sentry, Database, react.email, and custom rules
 
-# Build outputs
-dist
-build
-*.tsbuildinfo
-
-# Environment variables
-.env
-.env*.local
-
-# IDEs and editors
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.idea
-*.swp
-*.swo
-*~
+### macOS ###
 .DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+*.icloud
+
+### Windows ###
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+### Node ###
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components
+web_modules/
 
 # Logs
 logs
@@ -33,23 +53,134 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Turbo
-.turbo
+# Reports and runtime
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Better-T-Stack
-.alchemy
+# Caches
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.nyc_output
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.webpack/
+.svelte-kit
 
-# Testing
+# Coverage
+coverage
+*.lcov
+lib-cov
+.grunt
+
+# Output of `npm pack`
+*.tgz
+
+# Misc build
+build/
+dist/
+out/
+.next/
+.nuxt/
+.temp
+.vuepress/dist
+.docusaurus
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.vscode-test
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp
+.pnp.js
+.pnp.*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+### Environment Files ###
+.env
+.env.local
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.sentry-build-plugin
+
+### IDEs & Editors ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+*.sublime*
+.DS_*
+
+### Testing ###
 coverage
 .nyc_output
 
-# Misc
-*.tgz
-.cache
-tmp
-temp
+### React ###
+**/*.backup.*
+**/*.back.*
+psd
+thumb
+sketch
 
-# START Ruler Generated Files
+### Storybook ###
+storybook-static/
+
+### Turbo ###
+.turbo
+
+### Vercel ###
+.vercel
+
+### Sentry ###
+.sentryclirc
+
+### Database ###
+packages/database/generated
+
+### react.email ###
+.react-email
+
+### Custom / Misc ###
+node_modules
+.alchemy
+.tmp
+temp
+.yarn-integrity
+.npm
+.rpt2_cache/
+.rts2_cache_es/
+.rts2_cache_cjs/
+.rts2_cache_umd/
+
+# AI / Cursor Rules
+.cursorrules
+.github/copilot-instructions.md
+
+# Documentation
+.contentlayer
+.content-collections
+.source
+
+# Ruler Generated Files
 /.mcp.json
 /.mcp.json.bak
 /.vscode/mcp.json
@@ -58,41 +189,3 @@ temp
 /AGENTS.md.bak
 /CLAUDE.md
 /CLAUDE.md.bak
-# END Ruler Generated Files
-
-
-# dependencies (bun install)
-node_modules
-
-# output
-out
-dist
-*.tgz
-/prisma/generated
-
-# code coverage
-coverage
-*.lcov
-
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
-
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
-
-# caches
-.eslintcache
-.cache
-*.tsbuildinfo
-
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
-.DS_Store
