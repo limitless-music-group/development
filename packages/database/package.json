@@ -1,24 +1,33 @@
 {
   "name": "@packages/database",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./src/index.ts"
-    },
-    "./*": {
-      "types": "./dist/*.d.ts",
-      "default": "./src/*.ts"
-    }
-  },
+  "version": "0.0.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
   "scripts": {
-    "build": "tsdown",
-    "db:push": "prisma db push",
-    "db:studio": "prisma studio",
-    "db:generate": "prisma generate",
-    "db:migrate": "prisma migrate dev"
+    "analyze": "npx prisma generate --no-hints --schema=./prisma/schema.prisma",
+    "build": "npx prisma generate --no-hints --schema=./prisma/schema.prisma",
+    "push": "npx prisma db push",
+    "format": "npx prisma format",
+    "generate": "npx prisma format && npx prisma generate",
+    "migrate": "npx prisma format && npx prisma generate && npx prisma db push",
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "@prisma/adapter-neon": "6.19.0",
+    "@prisma/client": "6.19.0",
+    "server-only": "^0.0.1",
+    "undici": "^7.16.0",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
-    "prisma": "^6.15.0"
+    "@packages/typescript-config": "workspace:*",
+    "@types/node": "24.10.0",
+    "@types/ws": "^8.18.1",
+    "bufferutil": "^4.0.9",
+    "prisma": "6.19.0",
+    "typescript": "^5.9.3"
   }
 }

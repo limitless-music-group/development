@@ -14,11 +14,20 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "[tailwindcss]": {
     "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.biome": "explicit",
@@ -36,6 +45,7 @@
   "cSpell.words": [
     "apdisk",
     "basehub",
+    "cmdk",
     "donotpresent",
     "ehthumbs",
     "encryptable",
@@ -45,11 +55,14 @@
     "Fumadocs",
     "Geniviv",
     "icns",
+    "intellectronica",
     "jscoverage",
     "jspm",
     "Liveblocks",
     "Microbundle",
     "msix",
+    "neondatabase",
+    "neondb",
     "Nuxt",
     "pids",
     "Qwik",
@@ -61,17 +74,9 @@
     "timemachine",
     "Turborepo",
     "ultracite",
+    "vaul",
     "vercel",
     "vuepress",
     "wscript"
-  ],
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[graphql]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  }
+  ]
 }
