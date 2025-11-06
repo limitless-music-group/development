@@ -9,4 +9,4 @@ export const router = {
 	app: appRouter,
 };
 export type APIRouter = typeof router;
-export type APIRouterClient = RouterClient<typeof router>;
+export type APIRouterClient = RouterClient<typeof router> | undefined;
