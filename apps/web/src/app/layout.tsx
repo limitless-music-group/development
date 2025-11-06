@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../index.css";
 import Providers from "@/components/providers";
 import Header from "@/components/header";
+import '@packages/api/lib/orpc.server'
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",

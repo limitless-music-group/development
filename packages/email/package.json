@@ -1,0 +1,23 @@
+{
+  "name": "@packages/email",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.5.7",
+    "@packages/shared": "workspace:*",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "resend": "^6.4.1"
+  },
+  "devDependencies": {
+    "@packages/typescript-config": "workspace:*",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.3"
+  }
+}

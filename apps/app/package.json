@@ -4,11 +4,21 @@
   "private": true,
   "dependencies": {
     "@packages/design-system": "workspace:*",
+    "@packages/api": "workspace:*",
+    "@packages/auth": "workspace:*",
+    "@packages/database": "workspace:*",
+    "@packages/next-config": "workspace:*",
     "next": "16.0.1",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "@orpc/client": "^1.10.4",
+    "@orpc/server": ""
   },
   "devDependencies": {
-    "@packages/typescript-config": "workspace:*"
+    "@packages/typescript-config": "workspace:*",    
+    "@tanstack/react-query-devtools": "^5.90.2",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "typescript": "^5.9.3"
   }
 }

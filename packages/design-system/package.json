@@ -10,6 +10,7 @@
     "@hookform/resolvers": "^5.2.2",
     "@packages/auth": "workspace:*",
     "@packages/observability": "workspace:*",
+    "@packages/shared": "workspace:",
     "@tanstack/react-form": "^1.23.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
