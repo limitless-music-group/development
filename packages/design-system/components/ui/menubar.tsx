@@ -4,7 +4,7 @@ import type { ComponentProps } from "react"
 import { Menubar as MenubarPrimitive } from "radix-ui"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function Menubar({
   className,

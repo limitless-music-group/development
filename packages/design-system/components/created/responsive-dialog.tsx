@@ -12,7 +12,7 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from "../ui/dialog";
+} from "@packages/design-system/components/ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -21,7 +21,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-} from "../ui/drawer";
+} from "@packages/design-system/components/ui/drawer";
 
 type ResponsiveDialogProps = {
   open: boolean;

@@ -3,7 +3,7 @@ import { NavigationMenu as NavigationMenuPrimitive } from "radix-ui"
 import { cva } from "class-variance-authority"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function NavigationMenu({
   className,

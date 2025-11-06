@@ -2,7 +2,7 @@
 
 import type { ComponentProps } from "react"
 import { Dialog as DialogPrimitive } from "radix-ui"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 import { cn } from "@packages/design-system/lib/utils"
 

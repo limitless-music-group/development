@@ -1,14 +1,20 @@
 'use client'
 import { authClient } from '@packages/auth/client';
 import { useForm } from '@tanstack/react-form';
-import { RegisterSchema } from  '@packages/auth/lib/schemas/register-schema';
+import { RegisterSchema } from '@packages/auth/lib/schemas/register-schema';
 import { toast } from 'sonner';
-import Loader from '../../shared/loader';
-import { Button } from '../../ui/button';
-import { Input } from '../../ui/input';
-import { Label } from '../../ui/label';
+import Loader from '@packages/design-system/components/shared/loader';
+import { Button } from '@packages/design-system/components/ui/button';
+import { Input } from '@packages/design-system/components/ui/input';
+import { Label } from '@packages/design-system/components/ui/label';
 import { useRouter } from 'next/navigation';
-import { Card, CardHeader, CardContent, CardFooter ,CardTitle } from '../../ui/card';
+import { 
+	Card, 
+	CardHeader, 
+	CardContent, 
+	CardFooter, 
+	CardTitle 
+} from '@packages/design-system/components/ui/card';
 
 export default function RegisterForm({
   onSwitchToSignIn,

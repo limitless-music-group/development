@@ -3,8 +3,8 @@
 import { useMediaQuery } from "@packages/design-system/hooks/use-media-query";
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { Icons } from "../shared/icons";
-import { Button } from "../ui/button";
+import { Icons } from "@packages/design-system/components/shared/icons";
+import { Button } from "@packages/design-system/components/ui/button";
 import {
   Command,
   CommandEmpty,
@@ -12,9 +12,9 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "../ui/command";
-import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
-import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
+} from "@packages/design-system/components/ui/command";
+import { Drawer, DrawerContent, DrawerTrigger } from "@packages/design-system/components/ui/drawer";
+import { Popover, PopoverContent, PopoverTrigger } from "@packages/design-system/components/ui/popover";
 
 export type ComboboxItem = {
   value: string;

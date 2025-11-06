@@ -2,7 +2,7 @@ import type { ComponentProps } from "react"
 
 import { cn } from "@packages/design-system/lib/utils"
 import { Button, buttonVariants } from "@packages/design-system/components/ui/button"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function Pagination({ className, ...props }: ComponentProps<"nav">) {
   return (

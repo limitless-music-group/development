@@ -2,13 +2,13 @@
 
 import { Icons } from "./icons";
 import { useTheme } from "next-themes";
-import { Button } from "../ui/button";
+import { Button } from "@packages/design-system/components/ui/button";
 import { 
   DropdownMenu,  
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
+} from "@packages/design-system/components/ui/dropdown-menu";
 
 const themes = [
   { label: "Light", value: "light" },

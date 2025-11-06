@@ -1,5 +1,5 @@
 'use client'
-import { Button } from '../../ui/button';
+import { Button } from '@packages/design-system/components/ui/button';
 import { authClient } from '@packages/auth/client';
 import { useRouter } from "next/navigation";
 import { toast } from 'sonner';

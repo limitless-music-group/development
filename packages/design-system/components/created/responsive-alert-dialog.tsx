@@ -11,7 +11,7 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
-} from "../ui/alert-dialog";
+} from "@packages/design-system/components/ui/alert-dialog";
 import {
   Drawer,
   DrawerClose,
@@ -20,7 +20,7 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
-} from "../ui/drawer";
+} from "@packages/design-system/components/ui/drawer";
 
 type ResponsiveAlertDialogProps = {
   open: boolean;

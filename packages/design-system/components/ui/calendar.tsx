@@ -1,12 +1,12 @@
 "use client"
 
-import {ComponentProps, useEffect, useRef} from "react"
+import { type ComponentProps, useEffect, useRef } from "react"
 
 import { DayButton, DayPicker, getDefaultClassNames } from "react-day-picker"
 
 import { cn } from "@packages/design-system/lib/utils"
 import { Button, buttonVariants } from "@packages/design-system/components/ui/button"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function Calendar({
   className,

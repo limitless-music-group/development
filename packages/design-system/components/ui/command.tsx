@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@packages/design-system/components/ui/dialog"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function Command({
   className,

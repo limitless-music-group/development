@@ -1,5 +1,5 @@
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 import type { ComponentProps } from "react"
 
 function Spinner({ className, ...props }: ComponentProps<"svg">) {

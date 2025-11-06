@@ -4,7 +4,7 @@ import type { ComponentProps } from "react"
 import { ContextMenu as ContextMenuPrimitive } from "radix-ui"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "../shared/icons"
+import { Icons } from "@packages/design-system/components/shared/icons"
 
 function ContextMenu({
   ...props

@@ -5,9 +5,9 @@ import {
   DropdownMenuLabel,
   DropdownMenuTrigger,
   DropdownMenuSeparator, 
-} from '../../ui/dropdown-menu';
-import { Skeleton } from '../../ui/skeleton';
-import { Button } from '../../ui/button';
+} from '@packages/design-system/components/ui/dropdown-menu';
+import { Skeleton } from '@packages/design-system/components/ui/skeleton';
+import { Button } from '@packages/design-system/components/ui/button';
 import { authClient } from '@packages/auth/client';
 import Link from 'next/link';
 import SignOutButton from './sign-out-button';
