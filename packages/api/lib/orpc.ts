@@ -10,7 +10,7 @@ declare global {
 
 
 export const link = new RPCLink({
-  url: `${typeof window !== 'undefined' ? window.location.origin : "http://localhost:3002"}/rpc`,
+  url: `${process.env.NEXT_PUBLIC_API_URL}/rpc`,
   fetch(url, options) {
     return fetch(url, {
       ...options,

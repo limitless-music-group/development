@@ -7,6 +7,7 @@
     "@orpc/client": "^1.10.4",
     "@packages/auth": "workspace:*",
     "@packages/database": "workspace:*",
+    "@packages/shared": "workspace:*",
     "next": "16.0.1"
   },
   "devDependencies": {
