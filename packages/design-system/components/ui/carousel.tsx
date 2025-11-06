@@ -1,6 +1,14 @@
 "use client"
 
-import {ComponentProps, createContext, KeyboardEvent, useCallback, useContext, useEffect, useState} from "react"
+import { 
+  type ComponentProps, 
+  createContext, 
+  type KeyboardEvent, 
+  useCallback, 
+  useContext, 
+  useEffect, 
+  useState
+} from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"

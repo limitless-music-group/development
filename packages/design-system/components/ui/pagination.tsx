@@ -1,4 +1,4 @@
-import {ComponentProps} from "react"
+import type { ComponentProps } from "react"
 
 import { cn } from "@packages/design-system/lib/utils"
 import { Button, buttonVariants } from "@packages/design-system/components/ui/button"
@@ -106,7 +106,7 @@ function PaginationEllipsis({
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
     >
-      <Icons.ellipsis className="size-4" />
+      <Icons.ellipsisHorizontal className="size-4" />
       <span className="sr-only">More pages</span>
     </span>
   )

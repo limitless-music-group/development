@@ -1,6 +1,6 @@
 "use client"
 
-import {ComponentProps} from "react"
+import type { ComponentProps } from "react"
 import { Dialog as SheetPrimitive } from "radix-ui"
 
 import { cn } from "@packages/design-system/lib/utils"

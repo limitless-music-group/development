@@ -1,6 +1,6 @@
 "use client"
 
-import {ComponentProps, useContext} from "react"
+import { type ComponentProps, useContext} from "react"
 import { OTPInput, OTPInputContext } from "input-otp"
 
 import { cn } from "@packages/design-system/lib/utils"

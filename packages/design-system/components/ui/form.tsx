@@ -1,7 +1,15 @@
 "use client"
 
-import {ComponentProps, createContext, useContext, useId} from "react"
-import { Label as LabelPrimitive, Slot as SlotPrimitive } from "radix-ui"
+import { 
+  type ComponentProps, 
+  createContext, 
+  useContext, 
+  useId
+} from "react"
+import { 
+  Label as LabelPrimitive, 
+  Slot as SlotPrimitive 
+} from "radix-ui"
 
 import {
   Controller,

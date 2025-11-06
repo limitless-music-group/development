@@ -34,6 +34,10 @@ import {
     DownloadIcon,
     CircleIcon,
     Loader2Icon,
+    MinusIcon,
+    GripVerticalIcon,
+    CircleAlertIcon,
+    InfoIcon
 } from 'lucide-react';
 
 import { cn } from '../../lib/utils';
@@ -97,4 +101,9 @@ export const Icons = {
 
     // One-offs
     circle: CircleIcon,
+    minus: MinusIcon,
+    grabVertical: GripVerticalIcon,
+    warning: CircleAlertIcon,
+    info: InfoIcon,
+    
 };

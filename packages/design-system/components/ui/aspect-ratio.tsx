@@ -1,7 +1,7 @@
 "use client"
 
 import { AspectRatio as AspectRatioPrimitive } from "radix-ui"
-import { ComponentProps } from "react"
+import type { ComponentProps } from "react"
 
 function AspectRatio({
   ...props

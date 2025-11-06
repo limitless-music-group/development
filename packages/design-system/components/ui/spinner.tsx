@@ -1,10 +1,10 @@
 import { cn } from "@packages/design-system/lib/utils"
 import { Icons } from "../shared/icons"
-import { ComponentProps } from "react"
+import type { ComponentProps } from "react"
 
 function Spinner({ className, ...props }: ComponentProps<"svg">) {
   return (
-    <Icons.spinner
+    <Icons.loader
       role="status"
       aria-label="Loading"
       className={cn("size-4 animate-spin", className)}

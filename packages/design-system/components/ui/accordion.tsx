@@ -1,7 +1,7 @@
 "use client"
 
-import { ComponentProps } from "react"
-import {Accordion as AccordionPrimitive} from "radix-ui"
+import type { ComponentProps } from "react"
+import { Accordion as AccordionPrimitive } from "radix-ui"
 import { Icons } from "../shared/icons"
 
 import { cn } from "@packages/design-system/lib/utils"
