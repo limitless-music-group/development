@@ -3,9 +3,9 @@ import { betterAuth, type BetterAuthOptions } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { polar, checkout, portal } from "@polar-sh/better-auth";
 import { polarClient } from "./lib/payments";
-import { database } from "@packages/database";
+import { database } from "@packages/database/prisma/client";
 import { keys } from './keys';
-import { saltAndHashPassword, verifyPassword } from './lib/password';
+import { saltAndHashPassword, verifyPassword } from '@packages/shared/lib/auth/password';
 
 export const auth = betterAuth<BetterAuthOptions>({
 	secret: keys().BETTER_AUTH_SECRET,

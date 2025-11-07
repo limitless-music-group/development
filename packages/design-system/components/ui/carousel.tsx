@@ -15,7 +15,7 @@ import useEmblaCarousel, {
 
 import { cn } from "@packages/design-system/lib/utils"
 import { Button } from "@packages/design-system/components/ui/button"
-import { Icons } from "@packages/design-system/components/shared/icons"
+import { Icons } from "@packages/shared/components/icons";
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

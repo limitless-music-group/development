@@ -3,11 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@orpc/server": "^1.10.4",
     "@orpc/client": "^1.10.4",
+    "@orpc/server": "^1.10.4",
+    "@orpc/tanstack-query": "^1.10.4",
     "@packages/auth": "workspace:*",
     "@packages/database": "workspace:*",
+    "@packages/observability": "workspace:*",
     "@packages/shared": "workspace:*",
+    "@packages/rate-limit": "workspace:*",
+    "@tanstack/react-query": "^5.90.7",
     "next": "16.0.1"
   },
   "devDependencies": {

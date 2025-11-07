@@ -1,6 +1,6 @@
 "use client"
 
-import { Icons } from '@packages/design-system/components/shared/icons'
+import { Icons } from "@packages/shared/components/icons";
 import { useTheme } from "next-themes"
 import { Toaster as Sonner, type ToasterProps } from "sonner"
 import { Spinner } from './spinner'

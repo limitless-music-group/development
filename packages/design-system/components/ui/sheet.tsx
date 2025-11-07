@@ -4,7 +4,7 @@ import type { ComponentProps } from "react"
 import { Dialog as SheetPrimitive } from "radix-ui"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "@packages/design-system/components/shared/icons"
+import { Icons } from "@packages/shared/components/icons";
 
 function Sheet({ ...props }: ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />

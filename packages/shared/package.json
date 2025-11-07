@@ -6,7 +6,13 @@
     "clean": "git clean -xdf .cache .turbo dist node_modules",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@packages/observability": "workspace:*",
+    "bcryptjs": "^3.0.3",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.552.0",
+    "sonner": "^2.0.7"
+  },
   "devDependencies": {
     "@packages/typescript-config": "workspace:*",
     "@types/node": "^24.10.0",

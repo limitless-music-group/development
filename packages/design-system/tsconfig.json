@@ -20,6 +20,6 @@
     }
 		
 	},
-	"include": ["**/*.ts", "**/*.tsx"],
+	"include": ["**/*.ts", "**/*.tsx", "../shared/lib/date-utils.ts", "../auth/components/org-switcher.tsx", "../auth/components/register-form.tsx", "../auth/components/sign-out-button.tsx", "../auth/components/user-menu.tsx", "../auth/components/login-form.tsx"],
 	"exclude": ["node_modules"]
 }

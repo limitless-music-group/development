@@ -4,7 +4,7 @@ import type { ComponentProps } from "react"
 import * as ResizablePrimitive from "react-resizable-panels"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "@packages/design-system/components/shared/icons"
+import { Icons } from "@packages/shared/components/icons";
 
 function ResizablePanelGroup({
   className,

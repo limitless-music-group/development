@@ -4,7 +4,7 @@ import { type ComponentProps, useContext} from "react"
 import { OTPInput, OTPInputContext } from "input-otp"
 
 import { cn } from "@packages/design-system/lib/utils"
-import { Icons } from "@packages/design-system/components/shared/icons"
+import { Icons } from "@packages/shared/components/icons";
 
 function InputOTP({
   className,
