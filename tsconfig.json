@@ -8,7 +8,9 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": false,
-    "lib": ["ESNEXT"],
+    "lib": [
+      "ESNEXT"
+    ],
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
@@ -18,7 +20,9 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "strictNullChecks": true,
     "verbatimModuleSyntax": true
   }

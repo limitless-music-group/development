@@ -1,8 +1,14 @@
 {
-  "extends":  "@packages/typescript-config/nextjs.json",
+  "extends": "@packages/typescript-config/base.json",
   "compilerOptions": {
-    "baseUrl": "."
-  },
-	"include": ["**/*.ts", "**/*.tsx"],
-	"exclude": ["node_modules"]
+      "composite": true,
+      "incremental": true,
+      "outDir": "dist",
+      "baseUrl": ".",
+      "paths": {
+          "@/*": ["./src/*"]
+      },
+      "jsx": "react-jsx",
+      "jsxImportSource": "hono/jsx"
+  }
 }

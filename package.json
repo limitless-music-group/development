@@ -1,54 +1,55 @@
 {
-    "name": "opus",
-    "private": true,
-    "version": "0.1.0",
-    "packageManager": "pnpm@10.20.0",
-    "type": "module",
-    "engines": {
-        "vscode": "^1.22.0",
-        "node": ">=18"
-    },
-    "scripts": {
-        "analyze": "turbo analyze",
-        "boundaries": "turbo boundaries",
-        "build": "turbo build",
-        "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker,recharts",
-        "check": "npx ultracite@latest check",
-        "clean": "git clean -xdf node_modules",
-        "dev": "turbo dev",
-        "dev:api": "turbo -F api dev",
-        "dev:app": "turbo -F app dev",
-        "dev:docs": "turbo -F docs dev",
-        "dev:email": "turbo -F email dev",
-        "dev:storybook": "turbo -F storybook dev",
-        "dev:studio": "turbo -F studio dev",
-        "dev:web": "turbo -F web dev",
-        "db:format": "cd packages/database && pnpm format",
-        "db:generate": "cd packages/database && pnpm generate",
-        "db:migrate": "cd packages/database && pnpm migrate",
-        "db:push": "cd packages/database && pnpm push",
-        "fix": "npx ultracite@latest fix",
-        "ruler:apply": "pnpm dlx @intellectronica/ruler@latest apply --local-only",
-        "test": "turbo test",
-        "translate": "turbo translate"
-    },
-    "devDependencies": {
-        "@auto-it/first-time-contributor": "^11.3.0",
-        "@biomejs/biome": "^2.3.4",
-        "@packages/typescript-config": "workspace:*",
-        "@turbo/gen": "^2.6.0",
-        "@types/node": "^24.10.0",
-        "tsup": "^8.5.0",
-        "turbo": "^2.6.0",
-        "typescript": "^5.9.3",
-        "ultracite": "^6.3.0",
-        "vitest": "^4.0.7"
-    },
-    "dependencies": {
-        "@clack/prompts": "^0.11.0",
-        "@t3-oss/env-nextjs": "^0.13.8",
-        "commander": "^14.0.2",
-        "zod": "4.1.12",
-        "dotenv": "17.2.3"
-    }
+  "name": "opus",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.20.0",
+  "scripts": {
+    "analyze": "turbo analyze",
+    "boundaries": "turbo boundaries",
+    "build": "turbo build",
+    "bump-deps": "npx npm-check-updates --deep -u -x react-day-picker,recharts",
+    "check": "npx ultracite@latest check",
+    "check-types": "turbo check-types",
+    "clean": "git clean -xdf node_modules",
+    "db:format": "cd packages/database && npx prisma format",
+    "db:generate": "cd packages/database && npx prisma format && npx prisma generate",
+    "db:migrate": "cd packages/database && npx prisma format && npx prisma generate && npx prisma migrate dev",
+    "db:push": "cd packages/database && npx prisma format && npx prisma generate && npx prisma db push",
+    "dev": "turbo dev",
+    "dev:api": "turbo -F api dev",
+    "dev:app": "turbo -F app dev",
+    "dev:docs": "turbo -F docs dev",
+    "dev:email": "turbo -F email dev",
+    "dev:storybook": "turbo -F storybook dev",
+    "dev:studio": "turbo -F studio dev",
+    "dev:web": "turbo -F web dev",
+    "fix": "npx ultracite@latest fix",
+    "format": "npx ultracite@latest format",
+    "prepare": "husky",
+    "ruler:apply": "pnpm dlx @intellectronica/ruler@latest apply --local-only",
+    "test": "turbo test",
+    "translate": "turbo translate"
+  },
+  "devDependencies": {
+    "@auto-it/first-time-contributor": "^11.3.0",
+    "@biomejs/biome": "2.3.4",
+    "@packages/typescript-config": "workspace:*",
+    "@turbo/gen": "^2.6.0",
+    "@types/node": "^24.10.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "tsdown": "^0.16.1",
+    "turbo": "^2.6.0",
+    "typescript": "^5.9.3",
+    "ultracite": "^6.3.2",
+    "vitest": "^4.0.8"
+  },
+  "dependencies": {
+    "dotenv": "17.2.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "pnpm dlx ultracite fix"
+    ]
+  }
 }

@@ -1,25 +1,33 @@
 {
   "extends": "@packages/typescript-config/nextjs.json",
   "compilerOptions": {
-		// "declaration": true,
-		// "declarationMap": true,
-		// "sourceMap": true,
-		// "outDir": "dist",
-		// "composite": true,
-		// "jsx": "preserve",
-		// "allowJs": true,
-		"baseUrl": ".",
+    "baseUrl": ".",
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@packages/*": ["../*"],
-      "@packages/design-system/*": ["./*"]
-    }
-		
-	},
-	"include": ["**/*.ts", "**/*.tsx", "../shared/lib/date-utils.ts", "../auth/components/org-switcher.tsx", "../auth/components/register-form.tsx", "../auth/components/sign-out-button.tsx", "../auth/components/user-menu.tsx", "../auth/components/login-form.tsx"],
-	"exclude": ["node_modules"]
+      "@packages/*": [
+        "../*"
+      ],
+      "@packages/design-system/*": [
+        "./*"
+      ]
+    },
+    "strictNullChecks": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../shared/lib/date-utils.ts",
+    "../auth/components/org-switcher.tsx",
+    "../auth/components/register-form.tsx",
+    "../auth/components/sign-out-button.tsx",
+    "../auth/components/user-menu.tsx",
+    "../auth/components/login-form.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

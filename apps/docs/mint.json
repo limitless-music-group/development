@@ -1,0 +1,55 @@
+{
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Opus Docs",
+    "logo": {
+        "dark": "/logo/dark.svg",
+        "light": "/logo/light.svg"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@lmgcore.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.opus.com"
+  },
+  "anchors": [
+    {
+      "name": "Home site",
+      "icon": "home",
+      "url": "https://opus.com"
+    },
+    {
+      "name": "Community",
+      "icon": "slack",
+      "url": "https://opus.com/community"
+    },
+    {
+      "name":"Blog",
+      "icon":"newspaper",
+      "url":"https://blog.opus.com"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": ["introduction", "quickstart"]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/opus",
+    "linkedin": "https://www.linkedin.com/company/opus"
+  }
+}

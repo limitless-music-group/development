@@ -1,4 +1,9 @@
-lint-staged
+# add pnpm test later
+# pnpm test
+
+pnpm check
+pnpm fix
+
 
 #!/bin/sh
 # Exit on any error

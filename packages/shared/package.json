@@ -10,7 +10,7 @@
     "@packages/observability": "workspace:*",
     "bcryptjs": "^3.0.3",
     "date-fns": "^4.1.0",
-    "lucide-react": "^0.552.0",
+    "lucide-react": "^0.553.0",
     "sonner": "^2.0.7"
   },
   "devDependencies": {

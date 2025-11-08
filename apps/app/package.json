@@ -2,23 +2,28 @@
   "name": "app",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "dev": "next dev --port=3001"
+  },
   "dependencies": {
-    "@packages/design-system": "workspace:*",
+    "@orpc/client": "^1.10.4",
     "@packages/api": "workspace:*",
     "@packages/auth": "workspace:*",
     "@packages/database": "workspace:*",
+    "@packages/design-system": "workspace:*",
     "@packages/next-config": "workspace:*",
     "next": "16.0.1",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "@orpc/client": "^1.10.4",
-    "@orpc/server": ""
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@packages/typescript-config": "workspace:*",    
+    "@packages/typescript-config": "workspace:*",
     "@tanstack/react-query-devtools": "^5.90.2",
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
-    "typescript": "^5.9.3"
+    "@vitejs/plugin-react": "^5.1.0",
+    "jsdom": "^27.1.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
   }
 }

@@ -11,7 +11,8 @@
         "eamodio.gitlens",
         "streetsidesoftware.code-spell-checker",
         "steoates.autoimport",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "aaron-bond.better-comments"
     ],
     "unwantedRecommendations": []
 }
